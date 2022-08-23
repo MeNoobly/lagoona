@@ -1,0 +1,31 @@
+﻿.container {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-heading {
+    font-weight: 400;
+    font-size: 40px;
+
+    line-height: 40px;
+    color: #333333;
+
+    margin: 0;
+    margin-left: 40px;
+}
+
+.button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    padding-top: 13px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+}

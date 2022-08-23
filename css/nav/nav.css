@@ -1,0 +1,11 @@
+.nav {
+    max-width: 1170px;
+    min-height: 70px;
+}
+
+.nav__container {
+    background:#FFFFFF;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+

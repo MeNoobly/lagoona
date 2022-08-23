@@ -1,0 +1,30 @@
+﻿.header__logo {
+    max-width: 261px;
+    height: auto;
+}
+
+.header__tel {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 173px;
+    height: auto;
+    color: #666666;
+    margin-left: 40px;
+}
+
+.header__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    margin-left: auto;
+}
+
+.header__link-icon {
+    display: inline-block;
+    width: 21px;
+    height: 12px;
+    background: url("/img/vector.svg") center left no-repeat transparent;
+    background-size: auto 100%;
+}

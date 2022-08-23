@@ -1,0 +1,12 @@
+﻿.tour {
+    padding-top: 70px;
+}
+
+.tour__container {
+    background: #E9E9E9;
+    border-radius: 15px;
+    max-height: 256px;
+    padding-top: 45px;
+    padding-left: 40px;
+    padding-bottom: 45px;
+}  

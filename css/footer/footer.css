@@ -1,0 +1,13 @@
+﻿.footer {
+    padding-bottom: 30px;
+}
+
+.footer__container {
+    display: flex;
+    background: #333333;
+    border-radius: 15px;
+    height: 341px;
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
+}

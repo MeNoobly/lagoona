@@ -1,0 +1,19 @@
+﻿.main-heading_tour {
+    margin: 0;
+}
+
+.tour__interactive {
+    width: 1080px;
+    height: 106px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.tour__form {
+    display: flex;
+    align-items: center;
+    padding-top: 31px;
+    padding-left: 28px;
+    margin-top: 20px;
+}
+

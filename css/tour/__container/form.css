@@ -1,0 +1,86 @@
+﻿.form__div:not(:last-child) {
+    margin-right: 41px;
+}
+
+.form__div_first {
+    width: 169px;
+}
+
+.form__div_second {
+    width: 121px;
+}
+
+.form__div_bottom {
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.form__input_first {
+    max-width: 159px;
+}
+
+.form__input_second {
+    max-width: 121px;
+}
+
+.form__input_third {
+    max-width: 106px;
+}
+
+.form__input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    border: none;
+}
+
+.form__input-button {
+    display: flex;
+    align-items: center;
+}
+
+.form__arrow-button { 
+    align-items: center;
+    border: 0;
+    background: transparent;
+    width: 10px;
+    height: 6px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    margin-left: 2px;
+    background-size: contain;
+    background: url("/img/rectangle3.svg") no-repeat center center transparent;
+}
+
+.form__up-down-div {
+    display: flex;
+    flex-direction: column;
+    max-height: 14px;
+    margin: 0;
+    margin-left: 2px;
+    padding: 0;
+}
+
+.form__up-down-button {
+    border: 0;
+    cursor: pointer;
+    width: 15px;
+    height: 6px;
+    margin: 0;
+    padding: 1px 4px;
+}
+
+.form__up-down-button_up {
+    background: url("/img/up.svg") no-repeat center center #E9E9E9;
+    margin-bottom: 2px;
+}
+
+.form__up-down-button_down {
+    background: url("/img/down.svg") no-repeat center center #E9E9E9;
+}
+
+.form__button {
+    margin-left: 10px;
+    padding: 13px 30px;
+}
