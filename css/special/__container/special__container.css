@@ -13,14 +13,14 @@
 }
 
 .special__left-item_first {
-    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(/img/1.jpg);
+    background: var(--color-gradient), url(/img/1.jpg);
     margin-top: 20px;
     margin-bottom: 24px;
 }
 
 .special__left-item_second {
     display: block;
-    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(/img/3.jpg);
+    background: var(--color-gradient), url(/img/3.jpg);
 }
 
 .special__right-item {
@@ -35,7 +35,7 @@
 
 .special__strong {
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .special__strong_left {
@@ -52,7 +52,7 @@
 
 .special__text {
     font-weight: 400;
-    color: #FFFFFF;
+    color: var(--color-white);
     opacity: 0.8;
     margin: 0;
     padding-top: 15px;
@@ -73,14 +73,40 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #F0BF5F;
+    color: var(--color-light-orange);
+    transition: color .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.special__link:hover {
+    color: var(--color-most-light-orange);
+}
+
+.special__link:active {
+    color: var(--color-dark-orange);
 }
 
 .special__item-icon {
     display: inline-block;
     width: 11px;
     height: 11px;
-    border-right: 2px solid #F0BF5F;
-    border-bottom: 2px solid #F0BF5F;
-    transform: rotate(-45deg);
+    border-right: 2px solid var(--color-light-orange);
+    border-bottom: 2px solid var(--color-light-orange);
+    transform: rotate(-45deg) translateY(2px);
+    transition-property: border-bottom, border-right;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.special__link:hover .special__item-icon {
+    border-right: 2px solid var(--color-most-light-orange);
+    border-bottom: 2px solid var(--color-most-light-orange);
+}
+
+.special__link:active .special__item-icon {
+    border-right: 2px solid var(--color-dark-orange);
+    border-bottom: 2px solid var(--color-dark-orange);
+}
+
+.special__more {
+    margin: 0;
 }

@@ -4,7 +4,7 @@
 
 .footer__container {
     display: flex;
-    background: #333333;
+    background: var( --color-gray);
     border-radius: 15px;
     height: 341px;
     padding-top: 45px;

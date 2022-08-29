@@ -5,7 +5,7 @@
 .tour__interactive {
     width: 1080px;
     height: 106px;
-    background: #FFFFFF;
+    background: var(--color-white);
     border-radius: 15px;
 }
 

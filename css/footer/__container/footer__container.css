@@ -10,7 +10,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 190%;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .footer__text_first {
@@ -26,7 +26,16 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #CC9933;
+    color: var(--color-main-orange);
+    transition: color .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.footer__link:hover {
+    color: var(--color-light-orange);
+}
+
+.footer__link:active {
+    color: var(--color-dark-orange);
 }
 
 .footer__adress {

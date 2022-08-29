@@ -11,7 +11,7 @@
 }
 
 .form__div_bottom {
-    border-bottom: 1px solid #E9E9E9;
+    border-bottom: 1px solid var(--color-light-gray);
 }
 
 .form__input_first {
@@ -30,7 +30,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #000000;
+    color: var(--color-black);
     border: none;
 }
 
@@ -72,12 +72,12 @@
 }
 
 .form__up-down-button_up {
-    background: url("/img/up.svg") no-repeat center center #E9E9E9;
+    background: url("/img/up.svg") no-repeat center center var(--color-light-gray);
     margin-bottom: 2px;
 }
 
 .form__up-down-button_down {
-    background: url("/img/down.svg") no-repeat center center #E9E9E9;
+    background: url("/img/down.svg") no-repeat center center var(--color-light-gray);
 }
 
 .form__button {

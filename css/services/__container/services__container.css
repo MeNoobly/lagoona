@@ -1,57 +1,84 @@
 ﻿.services__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     height: 100%;
     margin-top: 20px;
 }
 
 .services__item {
     width: 573px;
-    min-height: 330px;
+    height: 330px;
     border-radius: 15px;
     padding-top: 191px;
     padding-left: 45px;
 }
 
-.services__item_first {
-    background: url(/img/4.jpg) top no-repeat, #FFFFFF;
+.services__item:not(:nth-last-child(-n+2)) {
     margin-bottom: 24px;
+}
+
+.services__item:not(:nth-child(2n)) {
+    margin-right: 24px;
+}
+
+.services__item_first {
+    background: url(/img/4.jpg) top no-repeat, var(--color-white);
 }
 
 .services__item_second {
-    background: url(/img/5.jpg) top no-repeat, #FFFFFF;
-    margin-bottom: 24px;
+    background: url(/img/5.jpg) top no-repeat, var(--color-white);
 }
 
 .services__item_third {
-    background: url(/img/6.jpg) top no-repeat, #FFFFFF;
+    background: url(/img/6.jpg) top no-repeat, var(--color-white);
 }
 
 .services__item_fourth {
-    background: url(/img/7.jpg) top no-repeat, #FFFFFF;
-}
-
-.services__icon {
-    display: inline-block;
-    width: 11px;
-    height: 11px;
-    border-right: 2px solid #CC9933;
-    border-bottom: 2px solid #CC9933;
-    transform: rotate(-45deg);
+    background: url(/img/7.jpg) top no-repeat, var(--color-white);
 }
 
 .services__link {
     font-size: 20px;
     font-weight: 500;
     line-height: 200%;
-    color: #CC9933;
+    color: var(--color-main-orange);
+    transition: color .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.services__link:hover {
+    color: var(--color-light-orange);
+}
+
+.services__link:active {
+    color: var(--color-dark-orange);
+}
+
+.services__icon {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-right: 2px solid var(--color-main-orange);
+    border-bottom: 2px solid var(--color-main-orange);
+    transform: rotate(-45deg);
+    transition-property: border-bottom, border-right;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.services__link:hover .services__icon {
+    border-right: 2px solid var(--color-light-orange);
+    border-bottom: 2px solid var(--color-light-orange);
+}
+
+.services__link:active .services__icon {
+    border-right: 2px solid var(--color-dark-orange);
+    border-bottom: 2px solid var(--color-dark-orange);
 }
 
 .services__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
-    color: #000000;
+    color: var(--color-black);
     max-width: 402px;
 }

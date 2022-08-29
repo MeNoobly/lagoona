@@ -9,22 +9,53 @@
     line-height: 20px;
     max-width: 173px;
     height: auto;
-    color: #666666;
+    color: var(--color-main-gray);
     margin-left: 40px;
+    transition: color .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.header__tel:hover,
+.header__tel:focus {
+    color: var(--color-main-orange);
+}
+
+.header__tel:active {
+    color: var(--color-dark-orange);
 }
 
 .header__link {
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #CC9933;
+    color: var(--color-main-orange);
     margin-left: auto;
+    transition: color .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.header__link-icon {
-    display: inline-block;
-    width: 21px;
-    height: 12px;
-    background: url("/img/vector.svg") center left no-repeat transparent;
-    background-size: auto 100%;
+.header__link:hover {
+    color: var(--color-light-orange);
+}
+
+.header__link:focus {
+    color: var(--color-main-orange);
+}
+
+.header__link:active {
+    color: var(--color-dark-orange);
+}
+
+.header__svg path {
+    transition: fill .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.header__link:hover .header__svg path{
+    fill: var(--color-light-orange);
+}
+
+.header__link:focus .header__svg path{
+    fill: var(--color-main-orange);
+}
+
+.header__link:active .header__svg path{
+    fill: var(--color-main-orange);
 }

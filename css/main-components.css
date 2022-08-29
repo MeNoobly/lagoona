@@ -1,4 +1,24 @@
-﻿.container {
+﻿::selection {
+    background-color: var(--color-blue);
+}
+
+:root {
+    --color-blue: #85dfed;
+    --color-gray: #333333;
+    --color-main-gray: #666666;
+    --color-classic-gray: #999999;
+    --color-light-gray: #E9E9E9;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-main-orange: #CC9933;
+    --color-dark-orange: #A47312;
+    --color-light-orange: #F0BF5F;
+    --color-most-light-orange: #FFe8BB;
+    --color-gradient: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+    --color-backgraund: #E5E5E5;
+}
+
+.container {
     max-width: 1170px;
     margin-right: auto;
     margin-left: auto;
@@ -7,25 +27,40 @@
 .main-heading {
     font-weight: 400;
     font-size: 40px;
-
     line-height: 40px;
-    color: #333333;
-
+    color: var(--color-gray);
     margin: 0;
     margin-left: 40px;
 }
 
-.button {
+.a_button {
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #CC9933;
-    border: 1px solid #CC9933;
+    color: var(--color-main-orange);
+    border: 1px solid var(--color-main-orange);
     border-radius: 15px;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     cursor: pointer;
     padding-top: 13px;
     padding-right: 20px;
     padding-bottom: 13px;
     padding-left: 20px;
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
+.a_button:hover,
+.a_button:focus {
+    background: var(--color-main-orange);
+    color: var(--color-white);
+    outline: none;
+}
+
+.a_button:active {
+    background: var(--color-dark-orange);
+}
+
+
+

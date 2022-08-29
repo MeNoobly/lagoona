@@ -26,11 +26,108 @@
 }
 
 * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+:focus,:active {
+    outline: none;
 }
 
 a {
     text-decoration: none;
+}
+
+a:focus,a:active {
+    outline: none;
+}
+
+a:focus {
+    outline: 1px solid var(--color-main-orange);
+}
+
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+nav,footer,header,aside {
+    display: block;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear{
+    display: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,a:visited {
+    text-decoration: none;
+}
+
+
+ul,li {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--color-main-orange);
+    border: 1px solid var(--color-main-orange);
+    border-radius: 15px;
+    background-color: var(--color-white);
+    cursor: pointer;
+    padding-top: 13px;
+    padding-right: 20px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    transition-property: background, color;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+button:hover,
+button:focus {
+    background: var(--color-main-orange);
+    color: var(--color-white);
+    outline: none;
+}
+
+button:active {
+    background: var(--color-dark-orange);
+    color: var(--color-white);
 }
 
 p {
@@ -45,10 +142,11 @@ ul {
 
 img {
     max-width: 100%;
+    vertical-align: top;
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: var(--color-backgraund);
     margin: 0;
     padding: 0 15px;
 }
@@ -61,6 +159,6 @@ legend {
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
-    color: #000000;
+    color: var(--color-black);
     margin-bottom: 15px;
 }

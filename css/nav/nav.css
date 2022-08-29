@@ -4,7 +4,7 @@
 }
 
 .nav__container {
-    background:#FFFFFF;
+    background:var(--color-white);
     border-radius: 15px;
     margin-top: 30px;
 }

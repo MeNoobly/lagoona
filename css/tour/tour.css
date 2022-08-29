@@ -3,7 +3,7 @@
 }
 
 .tour__container {
-    background: #E9E9E9;
+    background: var(--color-light-gray);
     border-radius: 15px;
     max-height: 256px;
     padding-top: 45px;
